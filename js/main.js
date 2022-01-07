@@ -9,11 +9,9 @@ var hotelPayment = 250;
 var forMuseum = 120;
 var courseDollar = 9433.34;
 var courseEur = 10354.03;
-var totalDollarcoast = Number(Math.floor (ticketPrice * courseDollar));
-var totalEurcoast = (Math.floor (forMuseum * courseEur));
+var totalDollarcoast = Number(Math.floor (ticketPrice + hotelPayment )* courseDollar);
+var totalEurcoast = Number(Math.floor (forMuseum * courseEur));
 var totalCoast = totalDollarcoast + totalEurcoast;
-
-console.log(totalDollarcoast);
 
 
 
